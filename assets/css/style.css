@@ -1,0 +1,170 @@
+/* Doctor'D Nutrição Esportiva e Clínica
+   Paleta extraída da identidade real do cliente (Instagram + fachada da clínica):
+   preto/grafite, dourado/bronze metálico e branco/mármore. */
+
+:root{
+  --ink: #100E0B;
+  --ink-2: #1B1712;
+  --ink-3: #262019;
+  --gold: #B4893C;
+  --gold-light: #E1BD79;
+  --gold-deep: #7C5C22;
+  --cream: #F8F4EC;
+  --cream-2: #F1EADA;
+  --line: #E4DAC3;
+  --charcoal: #221E19;
+  --stone: #6E6659;
+  --stone-light: #948C7C;
+}
+
+*{ scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce){
+  *{ scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+}
+
+body{
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display{ font-family: 'Fraunces', serif; }
+
+::selection{ background: var(--gold); color: var(--ink); }
+
+/* Focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible{
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* Marble / brass texture behind dark sections */
+.bg-ink-textured{
+  background-color: var(--ink);
+  background-image:
+    radial-gradient(ellipse at 15% 0%, rgba(180,137,60,0.16) 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 100%, rgba(180,137,60,0.10) 0%, transparent 50%),
+    repeating-linear-gradient(115deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 90px);
+}
+
+.bg-cream-textured{
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(ellipse at 85% 0%, rgba(180,137,60,0.07) 0%, transparent 45%);
+}
+
+.hairline{ border-color: var(--line); }
+.hairline-dark{ border-color: rgba(225,189,121,0.18); }
+
+/* Gold divider ornament */
+.ornament{
+  display:flex; align-items:center; gap: 0.75rem;
+}
+.ornament::before, .ornament.center::after{
+  content:""; height:1px; width: 2.5rem;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+.ornament.center::after{ background: linear-gradient(90deg, var(--gold), transparent); }
+
+/* Nav link underline grow */
+.nav-link{ position: relative; }
+.nav-link::after{
+  content:""; position:absolute; left:0; bottom:-4px; height:1px; width:0;
+  background: var(--gold); transition: width .35s ease;
+}
+.nav-link:hover::after, .nav-link:focus-visible::after{ width:100%; }
+
+/* Buttons */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  padding: .95rem 1.9rem; font-weight:600; font-size:.95rem; letter-spacing:.01em;
+  border-radius: 2px; transition: transform .25s ease, background-color .25s ease, color .25s ease, box-shadow .25s ease;
+  white-space: nowrap;
+}
+.btn-gold{
+  background: var(--gold); color: var(--ink);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset, 0 12px 24px -12px rgba(180,137,60,0.55);
+}
+.btn-gold:hover{ background: var(--gold-light); transform: translateY(-2px); }
+.btn-outline{
+  border: 1px solid var(--gold-light); color: var(--cream); background: transparent;
+}
+.btn-outline:hover{ background: rgba(225,189,121,0.1); transform: translateY(-2px); }
+.btn-outline-dark{
+  border: 1px solid var(--charcoal); color: var(--charcoal); background: transparent;
+}
+.btn-outline-dark:hover{ background: var(--charcoal); color: var(--cream); transform: translateY(-2px); }
+
+/* Cards */
+.card-service{
+  background: var(--cream); border: 1px solid var(--line);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+.card-service:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -24px rgba(16,14,11,0.25);
+  border-color: var(--gold);
+}
+
+.card-plan{ transition: transform .35s ease, box-shadow .35s ease; }
+.card-plan:hover{ transform: translateY(-6px); }
+
+.card-review{
+  background: #fff; border: 1px solid var(--line);
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+.card-review:hover{ box-shadow: 0 20px 40px -26px rgba(16,14,11,0.22); transform: translateY(-4px); }
+
+/* Stars */
+.stars{ color: var(--gold); letter-spacing: 2px; }
+
+/* Reveal on scroll */
+.reveal{ opacity:0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.is-visible{ opacity:1; transform: translateY(0); }
+
+/* Number badges for process steps */
+.step-num{
+  font-family:'Fraunces', serif; font-weight:600; font-size: 3.25rem; line-height:1;
+  color: transparent; -webkit-text-stroke: 1.5px var(--gold);
+}
+
+/* FAQ accordion */
+.faq-item[open] summary .faq-icon{ transform: rotate(45deg); }
+summary::-webkit-details-marker{ display:none; }
+.faq-icon{ transition: transform .3s ease; }
+
+/* Floating WhatsApp button */
+.wa-float{
+  position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 40;
+  width: 3.5rem; height:3.5rem; border-radius:9999px;
+  background:#25D366; display:flex; align-items:center; justify-content:center;
+  box-shadow: 0 12px 28px -10px rgba(0,0,0,0.45);
+  transition: transform .25s ease;
+}
+.wa-float:hover{ transform: scale(1.08); }
+
+/* Mobile nav */
+#mobile-menu{ transition: max-height .4s ease; overflow:hidden; }
+
+/* Sticky header shadow state */
+#site-header.scrolled{ box-shadow: 0 8px 30px -18px rgba(0,0,0,0.5); }
+
+/* Utility: balanced text wrap */
+.text-balance{ text-wrap: balance; }
+
+/* Image frame accent */
+.frame-gold{
+  position: relative;
+}
+.frame-gold::before{
+  content:""; position:absolute; inset: 14px -14px -14px 14px;
+  border: 1px solid var(--gold); z-index:-1;
+}
+
+/* Marquee-like credibility strip */
+.chip{
+  border:1px solid var(--line); background:#fff;
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.55rem 1rem; font-size:.85rem; font-weight:600; color: var(--charcoal);
+}
