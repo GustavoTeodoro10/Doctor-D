@@ -50,4 +50,44 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     revealEls.forEach(el => el.classList.add('is-visible'));
   }
+
+  // Contador animado para números de destaque (ex: "100%"), dispara ao entrar em tela
+  const counters = document.querySelectorAll('[data-count-to]');
+  if ('IntersectionObserver' in window && counters.length) {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const animateCount = (el) => {
+      const target = parseFloat(el.dataset.countTo);
+      const suffix = el.dataset.countSuffix || '';
+      if (reduceMotion) { el.textContent = target + suffix; return; }
+      const duration = 1400;
+      const start = performance.now();
+      const step = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(target * eased) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    const countIo = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          countIo.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(el => countIo.observe(el));
+  }
+
+  // FAQ — accordion custom com animação suave de altura (abre e fecha)
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+    if (!panel) return;
+    trigger.addEventListener('click', () => {
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+      trigger.setAttribute('aria-expanded', String(!isOpen));
+      panel.style.maxHeight = isOpen ? '0px' : panel.scrollHeight + 'px';
+    });
+  });
 });

@@ -154,23 +154,23 @@
 <section id="inicio" class="relative bg-ink-textured pt-32 pb-20 lg:pt-44 lg:pb-28 overflow-hidden">
   <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
     <div>
-      <div class="ornament mb-6">
+      <div class="ornament mb-6 hero-anim" style="animation-delay:.05s">
         <span class="text-xs uppercase tracking-[0.22em] text-[var(--gold-light)] font-semibold">Nutricionista em Mauá · SP</span>
       </div>
-      <h1 class="font-display text-cream text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] text-balance">
+      <h1 class="hero-anim font-display text-cream text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] text-balance" style="animation-delay:.15s">
         Emagrecimento e performance guiados por <span class="italic text-[var(--gold-light)]">dados reais</span> do seu corpo.
       </h1>
-      <p class="mt-6 text-cream/75 text-lg leading-relaxed max-w-xl">
+      <p class="hero-anim mt-6 text-cream/75 text-lg leading-relaxed max-w-xl" style="animation-delay:.3s">
         Avaliação física completa com bioimpedância de última geração e acompanhamento nutricional estratégico, em Mauá, SP. Agende agora sua avaliação.
       </p>
-      <div class="mt-9 flex flex-wrap gap-4">
+      <div class="hero-anim mt-9 flex flex-wrap gap-4" style="animation-delay:.42s">
         <a href="https://wa.me/5511976865826?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20com%20bioimped%C3%A2ncia." target="_blank" rel="noopener" class="btn btn-gold">
           Agendar minha avaliação
         </a>
         <a href="#oferta" class="btn btn-outline">Conhecer os planos</a>
       </div>
 
-      <div class="mt-12 flex items-center gap-5 flex-wrap">
+      <div class="hero-anim mt-12 flex items-center gap-5 flex-wrap" style="animation-delay:.54s">
         <div class="flex items-center gap-2">
           <span class="stars text-lg" aria-hidden="true">★★★★★</span>
           <span class="text-cream/80 text-sm font-medium">5,0 no Google <span class="text-cream/50">(15 avaliações)</span></span>
@@ -178,12 +178,12 @@
       </div>
     </div>
 
-    <div class="relative reveal">
+    <div class="relative hero-anim-img">
       <div class="frame-gold rounded-sm overflow-hidden">
         <img src="assets/img/clinica-recepcao.jpg" alt="Recepção da clínica Doctor'D em Mauá, com a logomarca aplicada na parede de mármore" class="w-full h-[420px] sm:h-[500px] object-cover" width="1598" height="2130" loading="eager" fetchpriority="high">
       </div>
-      <div class="absolute -bottom-6 -left-4 sm:left-6 bg-cream text-ink px-5 py-4 shadow-xl max-w-[240px]">
-        <p class="font-display text-2xl leading-none">100%</p>
+      <div class="hero-anim-tag absolute -bottom-6 -left-4 sm:left-6 bg-cream text-ink px-5 py-4 shadow-xl max-w-[240px]">
+        <p class="font-display text-2xl leading-none"><span data-count-to="100" data-count-suffix="%">0%</span></p>
         <p class="text-xs text-stone mt-1 leading-snug">avaliações 5 estrelas de quem já passou pela clínica</p>
       </div>
     </div>
@@ -213,8 +213,8 @@
 
     <div class="mt-14 grid md:grid-cols-3 gap-7">
       <!-- Card 1 -->
-      <article class="card-service reveal p-8 flex flex-col">
-        <div class="h-44 -mx-8 -mt-8 mb-6 overflow-hidden">
+      <article class="card-service reveal reveal--scale p-8 flex flex-col">
+        <div class="img-zoom h-44 -mx-8 -mt-8 mb-6">
           <img src="assets/img/clinica-bioimpedancia-scan.jpg" alt="Aparelho de bioimpedância de última geração em uso na clínica Doctor'D" class="w-full h-full object-cover" loading="lazy" width="1598" height="2130">
         </div>
         <h3 class="font-display text-xl mb-3">Avaliação física com bioimpedância</h3>
@@ -225,8 +225,8 @@
       </article>
 
       <!-- Card 2 -->
-      <article class="card-service reveal p-8 flex flex-col" style="transition-delay:.08s">
-        <div class="h-44 -mx-8 -mt-8 mb-6 overflow-hidden">
+      <article class="card-service reveal reveal--scale p-8 flex flex-col" style="transition-delay:.12s">
+        <div class="img-zoom h-44 -mx-8 -mt-8 mb-6">
           <img src="assets/img/clinica-bioimpedancia-tela.jpg" alt="Relatório detalhado de composição corporal apresentado ao paciente na consulta" class="w-full h-full object-cover" loading="lazy" width="1598" height="2130">
         </div>
         <h3 class="font-display text-xl mb-3">Consulta nutricional estratégica</h3>
@@ -237,8 +237,8 @@
       </article>
 
       <!-- Card 3 -->
-      <article class="card-service reveal p-8 flex flex-col" style="transition-delay:.16s">
-        <div class="h-44 -mx-8 -mt-8 mb-6 bg-ink flex items-center justify-center">
+      <article class="card-service reveal reveal--scale p-8 flex flex-col" style="transition-delay:.24s">
+        <div class="img-zoom h-44 -mx-8 -mt-8 mb-6 bg-ink flex items-center justify-center">
           <img src="assets/img/logo-doctor-d.jpg" alt="Logotipo Doctor'D" class="h-20 w-20 rounded-full object-cover ring-1 ring-[var(--gold-light)]/40" loading="lazy" width="150" height="150">
         </div>
         <h3 class="font-display text-xl mb-3">Consultoria em segurança alimentar</h3>
@@ -260,17 +260,17 @@
     </div>
 
     <div class="mt-16 grid md:grid-cols-3 gap-10 lg:gap-14">
-      <div class="reveal">
+      <div class="reveal reveal--left">
         <span class="step-num">01</span>
         <h3 class="font-display text-xl text-cream mt-4 mb-2">Avaliação com bioimpedância</h3>
         <p class="text-cream/65 text-[0.95rem] leading-relaxed">Mapeamento completo da sua composição corporal com equipamento de última geração, direto na consulta inicial.</p>
       </div>
-      <div class="reveal" style="transition-delay:.08s">
+      <div class="reveal" style="transition-delay:.12s">
         <span class="step-num">02</span>
         <h3 class="font-display text-xl text-cream mt-4 mb-2">Plano nutricional personalizado</h3>
         <p class="text-cream/65 text-[0.95rem] leading-relaxed">Estratégia alimentar construída a partir dos seus dados, rotina e objetivo — emagrecimento, performance ou saúde clínica.</p>
       </div>
-      <div class="reveal" style="transition-delay:.16s">
+      <div class="reveal reveal--right" style="transition-delay:.24s">
         <span class="step-num">03</span>
         <h3 class="font-display text-xl text-cream mt-4 mb-2">Acompanhamento contínuo</h3>
         <p class="text-cream/65 text-[0.95rem] leading-relaxed">Retornos periódicos com nova bioimpedância para ajustar o plano conforme a evolução real do seu corpo.</p>
@@ -291,7 +291,7 @@
     <div class="mt-16 grid lg:grid-cols-3 gap-8 items-stretch">
 
       <!-- Avulsa -->
-      <div class="card-plan reveal bg-white border border-[var(--line)] p-9 flex flex-col">
+      <div class="card-plan reveal reveal--left bg-white border border-[var(--line)] p-9 flex flex-col">
         <span class="text-xs uppercase tracking-[0.15em] text-stone font-semibold">Sessão avulsa</span>
         <h3 class="font-display text-2xl mt-2 mb-6">Avaliação Avulsa</h3>
         <ul class="space-y-3 text-[0.95rem] text-charcoal/85 flex-1">
@@ -304,7 +304,7 @@
       </div>
 
       <!-- 90 dias — destaque -->
-      <div class="card-plan reveal bg-ink text-cream p-9 flex flex-col relative shadow-2xl lg:-translate-y-3" style="transition-delay:.08s">
+      <div class="card-plan card-plan--featured reveal reveal--scale bg-ink text-cream p-9 flex flex-col relative shadow-2xl lg:-translate-y-3" style="transition-delay:.1s">
         <span class="absolute -top-3 left-9 bg-gold text-ink text-[0.7rem] font-bold uppercase tracking-wide px-3 py-1">Mais procurado</span>
         <span class="text-xs uppercase tracking-[0.15em] text-[var(--gold-light)] font-semibold">3 meses</span>
         <h3 class="font-display text-2xl mt-2 mb-6">Plano 90 Dias</h3>
@@ -318,7 +318,7 @@
       </div>
 
       <!-- 180 dias -->
-      <div class="card-plan reveal bg-white border border-[var(--line)] p-9 flex flex-col" style="transition-delay:.16s">
+      <div class="card-plan reveal reveal--right bg-white border border-[var(--line)] p-9 flex flex-col" style="transition-delay:.2s">
         <span class="text-xs uppercase tracking-[0.15em] text-stone font-semibold">6 meses</span>
         <h3 class="font-display text-2xl mt-2 mb-6">Plano 180 Dias</h3>
         <ul class="space-y-3 text-[0.95rem] text-charcoal/85 flex-1">
@@ -353,7 +353,7 @@
 
     <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <blockquote class="card-review reveal p-7">
+      <blockquote class="card-review p-7">
         <div class="flex items-center justify-between mb-3">
           <span class="stars text-sm">★★★★★</span>
           <svg class="h-5 w-5" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-2.1 14.1-5.6l-6.5-5.5C29.6 34.5 26.9 35.5 24 35.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.6l6.5 5.5C41.5 36.6 44 30.8 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
@@ -362,7 +362,7 @@
         <footer class="mt-4 text-sm font-semibold text-charcoal">Vanecy Santos <span class="block text-xs font-normal text-stone">Local Guide · Google</span></footer>
       </blockquote>
 
-      <blockquote class="card-review reveal p-7" style="transition-delay:.06s">
+      <blockquote class="card-review p-7">
         <div class="flex items-center justify-between mb-3">
           <span class="stars text-sm">★★★★★</span>
           <svg class="h-5 w-5" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-2.1 14.1-5.6l-6.5-5.5C29.6 34.5 26.9 35.5 24 35.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.6l6.5 5.5C41.5 36.6 44 30.8 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
@@ -371,7 +371,7 @@
         <footer class="mt-4 text-sm font-semibold text-charcoal">Patricia Santos <span class="block text-xs font-normal text-stone">Google</span></footer>
       </blockquote>
 
-      <blockquote class="card-review reveal p-7" style="transition-delay:.12s">
+      <blockquote class="card-review p-7">
         <div class="flex items-center justify-between mb-3">
           <span class="stars text-sm">★★★★★</span>
           <svg class="h-5 w-5" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-2.1 14.1-5.6l-6.5-5.5C29.6 34.5 26.9 35.5 24 35.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.6l6.5 5.5C41.5 36.6 44 30.8 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
@@ -380,7 +380,7 @@
         <footer class="mt-4 text-sm font-semibold text-charcoal">Luciano Rodrigues <span class="block text-xs font-normal text-stone">Google</span></footer>
       </blockquote>
 
-      <blockquote class="card-review reveal p-7" style="transition-delay:.18s">
+      <blockquote class="card-review p-7">
         <div class="flex items-center justify-between mb-3">
           <span class="stars text-sm">★★★★★</span>
           <svg class="h-5 w-5" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-2.1 14.1-5.6l-6.5-5.5C29.6 34.5 26.9 35.5 24 35.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.6l6.5 5.5C41.5 36.6 44 30.8 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
@@ -389,7 +389,7 @@
         <footer class="mt-4 text-sm font-semibold text-charcoal">Rodrigo Oliver <span class="block text-xs font-normal text-stone">Google</span></footer>
       </blockquote>
 
-      <blockquote class="card-review reveal p-7" style="transition-delay:.24s">
+      <blockquote class="card-review p-7">
         <div class="flex items-center justify-between mb-3">
           <span class="stars text-sm">★★★★★</span>
           <svg class="h-5 w-5" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.6 6.1 29.6 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.5 0 10.4-2.1 14.1-5.6l-6.5-5.5C29.6 34.5 26.9 35.5 24 35.5c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.6 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.2-4.2 5.6l6.5 5.5C41.5 36.6 44 30.8 44 24c0-1.3-.1-2.7-.4-3.5z"/></svg>
@@ -398,7 +398,7 @@
         <footer class="mt-4 text-sm font-semibold text-charcoal">Fernando Souza Santos <span class="block text-xs font-normal text-stone">Local Guide · Google</span></footer>
       </blockquote>
 
-      <div class="reveal p-7 flex flex-col items-start justify-center bg-cream border border-gold" style="transition-delay:.3s">
+      <div class="card-review p-7 flex flex-col items-start justify-center bg-cream border border-gold">
         <p class="font-display text-2xl mb-2 text-charcoal">Veja todas as avaliações</p>
         <p class="text-stone text-sm mb-5">Confira o perfil completo da Doctor'D no Google e valide você mesmo(a) as avaliações reais dos pacientes.</p>
         <a href="https://share.google/YlHHeYy6FH6d3kSAl" target="_blank" rel="noopener" class="btn btn-outline-dark">Ver no Google</a>
@@ -410,7 +410,7 @@
 <!-- ============ LOCALIZAÇÃO ============ -->
 <section id="localizacao" class="bg-cream-textured py-24 lg:py-32">
   <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
-    <div class="reveal">
+    <div class="reveal reveal--left">
       <span class="text-xs uppercase tracking-[0.2em] text-gold font-semibold">Onde estamos</span>
       <h2 class="font-display text-3xl sm:text-4xl mt-3 mb-6 text-balance">Atendimento presencial em Mauá, SP</h2>
       <ul class="space-y-5 text-[0.98rem]">
@@ -430,7 +430,7 @@
       <a href="https://share.google/YlHHeYy6FH6d3kSAl" target="_blank" rel="noopener" class="btn btn-outline-dark mt-8">Ver rotas no Google Maps</a>
     </div>
 
-    <div class="reveal aspect-[4/3] w-full overflow-hidden shadow-xl" style="transition-delay:.1s">
+    <div class="reveal reveal--right aspect-[4/3] w-full overflow-hidden shadow-xl" style="transition-delay:.15s">
       <iframe
         title="Mapa de localização da Doctor'D Nutrição Esportiva e Clínica"
         src="https://www.google.com/maps?q=Av.+da+Saudade,+1174+-+Vila+Vit%C3%B3ria,+Mau%C3%A1+-+SP,+09360-000&output=embed"
@@ -450,45 +450,55 @@
     </div>
 
     <div class="mt-12 space-y-3">
-      <details class="faq-item reveal bg-white/[0.04] border border-white/10 px-6 py-5 open:bg-white/[0.06]">
-        <summary class="flex items-center justify-between cursor-pointer text-cream font-medium list-none">
+      <div class="faq-item reveal bg-white/[0.04] border border-white/10 px-6">
+        <button class="faq-trigger w-full flex items-center justify-between gap-4 py-5 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
           Como funciona a avaliação com bioimpedância?
-          <span class="faq-icon text-[var(--gold-light)] text-xl leading-none">+</span>
-        </summary>
-        <p class="mt-4 text-cream/65 text-[0.95rem] leading-relaxed">O aparelho de última geração mede em poucos minutos gordura corporal, água intra e extracelular, massa magra e taxa metabólica basal. O resultado é analisado na mesma consulta para montar sua estratégia nutricional.</p>
-      </details>
+          <span class="faq-icon text-[var(--gold-light)] text-xl leading-none shrink-0">+</span>
+        </button>
+        <div id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1" class="faq-panel">
+          <p class="pb-5 text-cream/65 text-[0.95rem] leading-relaxed">O aparelho de última geração mede em poucos minutos gordura corporal, água intra e extracelular, massa magra e taxa metabólica basal. O resultado é analisado na mesma consulta para montar sua estratégia nutricional.</p>
+        </div>
+      </div>
 
-      <details class="faq-item reveal bg-white/[0.04] border border-white/10 px-6 py-5 open:bg-white/[0.06]" style="transition-delay:.05s">
-        <summary class="flex items-center justify-between cursor-pointer text-cream font-medium list-none">
+      <div class="faq-item reveal bg-white/[0.04] border border-white/10 px-6" style="transition-delay:.05s">
+        <button class="faq-trigger w-full flex items-center justify-between gap-4 py-5 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
           Os planos atendem emagrecimento e também performance esportiva?
-          <span class="faq-icon text-[var(--gold-light)] text-xl leading-none">+</span>
-        </summary>
-        <p class="mt-4 text-cream/65 text-[0.95rem] leading-relaxed">Sim. O acompanhamento é individualizado conforme o objetivo — seja emagrecimento, ganho de performance para treino ou saúde clínica geral.</p>
-      </details>
+          <span class="faq-icon text-[var(--gold-light)] text-xl leading-none shrink-0">+</span>
+        </button>
+        <div id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2" class="faq-panel">
+          <p class="pb-5 text-cream/65 text-[0.95rem] leading-relaxed">Sim. O acompanhamento é individualizado conforme o objetivo — seja emagrecimento, ganho de performance para treino ou saúde clínica geral.</p>
+        </div>
+      </div>
 
-      <details class="faq-item reveal bg-white/[0.04] border border-white/10 px-6 py-5 open:bg-white/[0.06]" style="transition-delay:.1s">
-        <summary class="flex items-center justify-between cursor-pointer text-cream font-medium list-none">
+      <div class="faq-item reveal bg-white/[0.04] border border-white/10 px-6" style="transition-delay:.1s">
+        <button class="faq-trigger w-full flex items-center justify-between gap-4 py-5 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
           Qual a diferença entre a Avaliação Avulsa e os planos de 90/180 dias?
-          <span class="faq-icon text-[var(--gold-light)] text-xl leading-none">+</span>
-        </summary>
-        <p class="mt-4 text-cream/65 text-[0.95rem] leading-relaxed">A Avaliação Avulsa é indicada para quem quer conhecer o método com uma consulta única. Os planos de 90 e 180 dias incluem retornos mensais com nova bioimpedância a cada consulta e suporte contínuo via WhatsApp, ideais para resultados sustentáveis.</p>
-      </details>
+          <span class="faq-icon text-[var(--gold-light)] text-xl leading-none shrink-0">+</span>
+        </button>
+        <div id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3" class="faq-panel">
+          <p class="pb-5 text-cream/65 text-[0.95rem] leading-relaxed">A Avaliação Avulsa é indicada para quem quer conhecer o método com uma consulta única. Os planos de 90 e 180 dias incluem retornos mensais com nova bioimpedância a cada consulta e suporte contínuo via WhatsApp, ideais para resultados sustentáveis.</p>
+        </div>
+      </div>
 
-      <details class="faq-item reveal bg-white/[0.04] border border-white/10 px-6 py-5 open:bg-white/[0.06]" style="transition-delay:.15s">
-        <summary class="flex items-center justify-between cursor-pointer text-cream font-medium list-none">
+      <div class="faq-item reveal bg-white/[0.04] border border-white/10 px-6" style="transition-delay:.15s">
+        <button class="faq-trigger w-full flex items-center justify-between gap-4 py-5 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
           A clínica também atende empresas do ramo alimentício?
-          <span class="faq-icon text-[var(--gold-light)] text-xl leading-none">+</span>
-        </summary>
-        <p class="mt-4 text-cream/65 text-[0.95rem] leading-relaxed">Sim, a Doctor'D oferece consultoria em segurança alimentar e treinamento em boas práticas para equipes de bares e restaurantes. Fale conosco pelo WhatsApp para conhecer o formato.</p>
-      </details>
+          <span class="faq-icon text-[var(--gold-light)] text-xl leading-none shrink-0">+</span>
+        </button>
+        <div id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4" class="faq-panel">
+          <p class="pb-5 text-cream/65 text-[0.95rem] leading-relaxed">Sim, a Doctor'D oferece consultoria em segurança alimentar e treinamento em boas práticas para equipes de bares e restaurantes. Fale conosco pelo WhatsApp para conhecer o formato.</p>
+        </div>
+      </div>
 
-      <details class="faq-item reveal bg-white/[0.04] border border-white/10 px-6 py-5 open:bg-white/[0.06]" style="transition-delay:.2s">
-        <summary class="flex items-center justify-between cursor-pointer text-cream font-medium list-none">
+      <div class="faq-item reveal bg-white/[0.04] border border-white/10 px-6" style="transition-delay:.2s">
+        <button class="faq-trigger w-full flex items-center justify-between gap-4 py-5 text-left text-cream font-medium" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">
           Como agendo minha primeira consulta?
-          <span class="faq-icon text-[var(--gold-light)] text-xl leading-none">+</span>
-        </summary>
-        <p class="mt-4 text-cream/65 text-[0.95rem] leading-relaxed">Basta chamar no WhatsApp pelo botão presente em todo o site. Vamos entender seu objetivo e encontrar o melhor horário disponível na clínica em Mauá.</p>
-      </details>
+          <span class="faq-icon text-[var(--gold-light)] text-xl leading-none shrink-0">+</span>
+        </button>
+        <div id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5" class="faq-panel">
+          <p class="pb-5 text-cream/65 text-[0.95rem] leading-relaxed">Basta chamar no WhatsApp pelo botão presente em todo o site. Vamos entender seu objetivo e encontrar o melhor horário disponível na clínica em Mauá.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -539,10 +549,10 @@
     <div>
       <h3 class="text-cream font-semibold mb-4 text-sm uppercase tracking-wide">Redes sociais</h3>
       <div class="flex gap-3">
-        <a href="https://www.instagram.com/doctor_dnutricao" target="_blank" rel="noopener" aria-label="Instagram da Doctor'D" class="h-10 w-10 flex items-center justify-center border border-white/15 hover:border-[var(--gold-light)] hover:text-[var(--gold-light)] transition-colors">
+        <a href="https://www.instagram.com/doctor_dnutricao" target="_blank" rel="noopener" aria-label="Instagram da Doctor'D" class="h-10 w-10 flex items-center justify-center border border-white/15 hover:border-[var(--gold-light)] hover:text-[var(--gold-light)] hover:-translate-y-1 transition-all duration-300">
           <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
         </a>
-        <a href="https://share.google/YlHHeYy6FH6d3kSAl" target="_blank" rel="noopener" aria-label="Perfil no Google" class="h-10 w-10 flex items-center justify-center border border-white/15 hover:border-[var(--gold-light)] hover:text-[var(--gold-light)] transition-colors">
+        <a href="https://share.google/YlHHeYy6FH6d3kSAl" target="_blank" rel="noopener" aria-label="Perfil no Google" class="h-10 w-10 flex items-center justify-center border border-white/15 hover:border-[var(--gold-light)] hover:text-[var(--gold-light)] hover:-translate-y-1 transition-all duration-300">
           <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M21.6 12.23c0-.75-.07-1.47-.19-2.16H12v4.1h5.38c-.23 1.25-.94 2.31-2 3.02v2.5h3.24c1.9-1.75 3-4.32 3-7.46z"/><path d="M12 22c2.7 0 4.96-.9 6.62-2.43l-3.24-2.5c-.9.6-2.05.96-3.38.96-2.6 0-4.8-1.76-5.59-4.12H3.06v2.58C4.7 19.62 8.09 22 12 22z"/><path d="M6.41 13.91A5.96 5.96 0 016.09 12c0-.66.11-1.3.32-1.91V7.51H3.06A9.99 9.99 0 002 12c0 1.61.39 3.14 1.06 4.49l3.35-2.58z"/><path d="M12 6.5c1.47 0 2.79.5 3.83 1.5l2.87-2.87C16.95 3.4 14.7 2.5 12 2.5 8.09 2.5 4.7 4.88 3.06 8.02l3.35 2.58C7.2 8.24 9.4 6.5 12 6.5z"/></svg>
         </a>
       </div>
